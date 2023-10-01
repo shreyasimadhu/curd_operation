@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud-Operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+        <h3>
+            Curd-- Create By <span>Shereyase Madhu Shampa</span><br>
+            Curd Means Create Record / Delete / Update
+            <hr>
+        </h3>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="number">Phone No:</label><br>
+                        <input type="number" name="number" id="number" required>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label><br>
+                        <input type="text" list="connect1" id="gender" name="gender" required>
+                        <datalist id="connect1">
+                            <option value="Male"></option>
+                            <option value="Female"></option>
+                            <option value="Others"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="eq">E-Q:</label><br>
+                        <input type="text" list="connect2" id="eq" name="eq" required>
+                        <datalist id="connect2">
+                            <option value="MSC"></option>
+                            <option value="BSC"></option>
+                            <option value="HSC"></option>
+                            <option value="SSC"></option>
+                            <option value="JSC"></option>
+                            <option value="PSC"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label for="skills">Skills:</label><br>
+                        <input type="text" list="connect" id="skills" name="skills" required>
+                        <datalist id="connect">
+                            <option value="Web Design"></option>
+                            <option value="Web Development"></option>
+                            <option value="Data Science"></option>
+                            <option value="DataBase"></option>
+                            <option value="Android App D."></option>
+                            <option value="PC App D."></option>
+                        </datalist>
+                    </div>
+
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone No</th>
+                                <th>Date of Birth</th>
+                                <th>Gender</th>
+                                <th>E-Q</th>
+                                <th>Skills</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+<script src="script.js"></script>
+</body>
+</html>
